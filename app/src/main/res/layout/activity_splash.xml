@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.saproductions.magicpin_hls.activity.Splash">
+
+    <ImageView
+        android:layout_margin="25dp"
+        android:src="@drawable/logo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/imageView" />
+
+    <Button
+        android:id="@+id/splash_button"
+        android:layout_width="300dp"
+        android:text="NEXT"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:layout_height="40dp"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:id="@+id/splash_rg"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginBottom="39dp"
+        android:layout_above="@+id/splash_button"
+        android:layout_alignStart="@+id/textView">
+
+        <RadioButton android:id="@+id/splash_rYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YES"
+            android:textColor="#ffffff"
+            android:layout_margin="15dp"
+           />
+
+        <RadioButton android:id="@+id/splash_rNO"
+            android:layout_width="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="NO"
+            android:textColor="#ffffff"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WANNA AUTOLOAD VIDEO ?"
+        android:id="@+id/textView"
+        android:layout_above="@+id/splash_rg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp" />
+
+</RelativeLayout>
